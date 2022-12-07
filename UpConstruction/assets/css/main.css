@@ -71,6 +71,7 @@ section {
 .section-header {
   text-align: center;
   padding-bottom: 70px;
+  
 }
 
 .section-header h2 {
@@ -702,10 +703,11 @@ section {
 }
 
 .constructions .card-item .card-bg {
-  min-height: 300px;
+  min-height: 256px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  border-radius: 25px;
 }
 
 .constructions .card-item .card-body {
