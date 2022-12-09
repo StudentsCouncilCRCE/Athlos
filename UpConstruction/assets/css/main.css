@@ -2885,3 +2885,117 @@ p{
 .timeline{
   color: white;
 }
+ .container .row .col img{
+  height: 460px;
+  width: 400px;
+ padding-bottom: 50px;
+ }
+ 
+ .container{
+  justify-content: space-between;
+ }
+
+ .container img{
+  filter: grayscale();
+  transition: filter 0.5s ease-in-out;
+
+ }
+
+ .container img:hover{
+  filter: none;
+ }
+
+ /* schedule timetable */
+ .schedule-section {
+  background-image: url('');
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.table-responsive {
+	filter: drop-shadow(2px 2px 4px #606060);
+}
+
+.schedule-table {
+  border-radius: var(--border-radius-medium);
+  position: relative;
+  overflow: hidden;
+}
+
+.schedule-table .bg-warning {
+  background: #f0a5a5 !important;
+}
+
+.schedule-table thead th {
+  background-color: var(--secondary-color);
+}
+
+.schedule-table th,
+.schedule-table tr,
+.schedule-table td {
+  border-bottom-color: #363a3e;
+  padding: 30px;
+}
+
+.schedule-table tr:last-child th,
+.schedule-table tr:last-child td {
+  border-bottom-color: transparent;
+}
+
+.schedule-table thead th {
+  border-right: 1px solid #c7460a;
+  border-bottom-color: transparent;
+}
+
+.schedule-table th + td {
+  border-bottom: 0;
+}
+
+.schedule-table thead th:last-child {
+  border-right-color: transparent;
+}
+
+.schedule-table .football-background-image {
+  background-image: url('/UpConstruction/assets/img/Football.jpeg');
+}
+
+.schedule-table .rink-background-image {
+  background-image: url('/UpConstruction/assets/img/rink\ football.jpeg');
+}
+
+.schedule-table .carrom-background-image {
+  background-image: url('/UpConstruction/assets/img/carrom.jpeg');
+}
+.schedule-table .throwball-background-image {
+  background-image: url('/UpConstruction/assets/img/throwball.jpeg');
+}
+.schedule-table .tt-background-image {
+  background-image: url('/UpConstruction/assets/img/tt.jpeg');
+}
+.schedule-table .chess-background-image {
+  background-image: url('/UpConstruction/assets/img/chess.jpeg');
+}
+.schedule-table .basketball-background-image {
+  background-image: url('/UpConstruction/assets/img/basketball.jpeg');
+}
+.schedule-table .badminton-background-image {
+  background-image: url('/UpConstruction/assets/img/badminton.jpeg');
+}
+
+.table-background-image-wrap {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: none;
+  position: relative;
+}
+
+
+.schedule-table h3,
+.schedule-table p {
+  color: #ff1616;
+  position: relative;
+  z-index: 2;
+}
+
