@@ -3175,12 +3175,7 @@ strong {
   .custom-video {
     background: url("/assets/img/Athlos_website_landing_page_mobile.mp4");
   }
-  .container .row .col img {
-    height: 250px;
-    width: 250px;
-    padding-bottom: 50px;
-    border-radius: 5%;
-  }
+ 
   .footer-info{
     text-align: center;
   }
@@ -3194,7 +3189,14 @@ strong {
     font-size: 40px;
   }
 }
-
+@media screen and (max-width: 460px){
+  .container .row .col img {
+    height: 300px;
+    width: 250px;
+    padding-bottom: 50px;
+    border-radius: 5%;
+  }
+}
 /*---------------------------------------
   SITE HEADER              
 -----------------------------------------*/
