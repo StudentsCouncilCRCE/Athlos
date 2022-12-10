@@ -112,11 +112,11 @@ section {
   margin: 0 auto 0 auto;
 }
 
-@media (min-width: 1199px) {
+@media screen and  (max-width: 1199px) {
   .section-header p {
     max-width: 60%;
   }
-}
+
 
 #MyVideo {
   position: relative;
@@ -125,6 +125,28 @@ section {
   min-width: 100%;
   min-height: 100%;
 }
+}
+
+
+
+@media screen and (min-witdh:320px)
+{
+html {
+  min-width: 100px;
+  min-height: 100%;
+}
+  #MyVideo {
+    position: relative;
+    bottom: 170px;
+    right: 150px;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+}
+
+
+
 
 /*--------------------------------------------------------------
 # Breadcrumbs
