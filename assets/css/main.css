@@ -2897,12 +2897,16 @@ p{
 
  .container img{
   filter: grayscale();
-  transition: filter 0.5s ease-in-out;
+  
+  transition: transform filter ;
+  transition-duration: 0.5s;
+  transform-style: ease;
 
  }
 
  .container img:hover{
   filter: none;
+  transform: scale(1.2);
  }
 
  /* schedule timetable */
@@ -2998,4 +3002,5 @@ p{
   position: relative;
   z-index: 2;
 }
+
 
