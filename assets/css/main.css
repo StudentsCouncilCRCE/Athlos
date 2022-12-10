@@ -461,7 +461,7 @@ section {
 
 .services .service-item .icon {
   width: 48px;
-  height: 48px;
+  height: 48px; 
   position: relative;
   margin-bottom: 50px;
 }
@@ -512,13 +512,17 @@ section {
   color: var(--color-primary);
 }
 
+
 .services .service-item:hover .icon:before {
   background: var(--color-primary);
 }
 
+
 .services .service-item:hover h3 {
   border-color: var(--color-primary);
 }
+
+
 
 /*--------------------------------------------------------------
 # Features Section
@@ -2318,7 +2322,7 @@ section {
 .faq .accordion-button {
   padding: 15px 15px 20px 0;
   font-weight: 600;
-  border: 0;
+  border-radius: 0px;
   font-size: 18px;
   color: #444444;
   text-align: left;
@@ -2336,7 +2340,7 @@ section {
 
 .faq .accordion-body {
   padding: 0 0 25px 0;
-  border: 0;
+  border-radius: 0%;
 }
 
 /*--------------------------------------------------------------
@@ -2704,6 +2708,89 @@ p {
   color: #ff1616;
   position: relative;
   z-index: 2;
+}
+
+
+.col .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+.col .btn:hover {
+  background-color: rgb(178, 1, 1);
+}
+
+/* Container needed to position the button. Adjust the width as needed */
+.col {
+  position: relative;
+  width: 50%;
+}
+
+
+
+.col img {
+  width: 100%;
+  height: auto;
+}
+
+/*---------------------------------------
+  CUSTOM PROPERTIES ( VARIABLES )             
+-----------------------------------------*/
+:root {
+  --white-color: #ffffff;
+  --primary-color: #f8cb2e;
+  --secondary-color: #ee5007;
+  --section-bg-color: #f0f8ff;
+  --custom-btn-bg-color: #ee5007;
+  --custom-btn-bg-hover-color: #c01f27;
+  --dark-color: #000000;
+  --p-color: #717275;
+  --border-color: #7fffd4;
+  --link-hover-color: #b22727;
+}
+
+.col .btn{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+.col .btn:hover {
+  background-color: rgb(178, 1, 1);
+}
+
+/* Container needed to position the button. Adjust the width as needed */
+.col {
+  position: relative;
+  width: 50%;
+}
+
+
+
+.col img {
+  width: 100%;
+  height: auto;
 }
 
 /*---------------------------------------
