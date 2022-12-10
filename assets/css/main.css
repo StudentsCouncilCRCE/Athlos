@@ -1,4 +1,4 @@
-/**
+  /**
 * Template Name: UpConstruction - v1.2.1
 * Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
 * Author: BootstrapMade.com
@@ -37,7 +37,14 @@ body {
   font-family: var(--font-default);
   color: var(--color-default);
   overflow-x: hidden;
-  background: #000;
+ 
+  background: url(/assets/img/background.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  
 }
 
 a {
@@ -2489,9 +2496,9 @@ section {
 .containerr::after {
   content: "";
   position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
+  width: 35px;
+  height: 35px;
+  right: -18px;
   background-color: rgb(255, 255, 255);
   border: 4px solid #ff9f55;
   top: 15px;
@@ -2544,8 +2551,8 @@ section {
 
 /* The actual content */
 .contentt {
-  padding: 20px 30px;
-  background-color: rgb(0, 0, 0);
+  padding: 20px 14px;
+  background-color: rgba(0, 0, 0, 0);
   position: relative;
   border-radius: 6px;
   text-align: center;
@@ -2553,6 +2560,7 @@ section {
 
 .contentt img {
   width: 460px;
+  border-radius: 20%;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -2587,8 +2595,11 @@ section {
   .right {
     left: 0%;
   }
+  .contentt img{
+    width: 200px;
+  }
 }
-p {
+p{
   color: white;
 }
 .timeline {
@@ -2617,97 +2628,107 @@ p {
   transform: scale(1.2);
 }
 
-/* schedule timetable */
-.schedule-section {
-  background-image: url("");
-  background-color: #000000;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.table-responsive {
-  filter: drop-shadow(2px 2px 4px #606060);
-}
 
-.schedule-table {
+
+
+ .google-map {
   border-radius: var(--border-radius-medium);
+}
+
+
+/*---------------------------------------
+  CUSTOM FORM               
+-----------------------------------------*/
+.custom-form .form-control {
+  color: var(--p-color);
+  margin-bottom: 24px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  outline: none;
+}
+
+.custom-form button[type="submit"] {
+  background: var(--custom-btn-bg-color);
+  border: none;
+  border-radius: var(--border-radius-large);
+  color: var(--white-color);
+  font-size: var(--p-font-size);
+  font-weight: var(--font-weight-medium);
+  transition: all 0.3s;
+  margin-bottom: 0;
+}
+
+.custom-form button[type="submit"]:hover,
+.custom-form button[type="submit"]:focus {
+  background: var(--custom-btn-bg-hover-color);
+  border-color: transparent;
+}
+.section-padding {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.section-bg {
+  background-color: var(--section-bg-color);
+}
+
+.section-overlay {
+  background-color: var(--dark-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  opacity: 0.35;
+}
+
+.section-overlay + .container {
   position: relative;
-  overflow: hidden;
 }
 
-.schedule-table .bg-warning {
-  background: #f0a5a5 !important;
+.tab-content {
+  background-color: var(--white-color);
+  border-radius: var(--border-radius-medium);
+  padding: 45px;
 }
 
-.schedule-table thead th {
-  background-color: var(--secondary-color);
-}
-
-.schedule-table th,
-.schedule-table tr,
-.schedule-table td {
-  border-bottom-color: #363a3e;
-  padding: 30px;
-}
-
-.schedule-table tr:last-child th,
-.schedule-table tr:last-child td {
-  border-bottom-color: transparent;
-}
-
-.schedule-table thead th {
-  border-right: 1px solid #c7460a;
-  border-bottom-color: transparent;
-}
-
-.schedule-table th + td {
+.nav-tabs {
+  background-color: var(--section-bg-color);
+  border-radius: var(--border-radius-large);
   border-bottom: 0;
+  padding: 15px;
 }
 
-.schedule-table thead th:last-child {
-  border-right-color: transparent;
+.nav-tabs .nav-link {
+  border-radius: var(--border-radius-large);
+  border: 0;
+  padding: 15px 25px;
+  transition: all 0.3s;
 }
 
-.schedule-table .football-background-image {
-  background-image: url("/UpConstruction/assets/img/Football.jpeg");
+.nav-tabs .nav-link:first-child {
+  margin-right: 15px;
 }
 
-.schedule-table .rink-background-image {
-  background-image: url("/UpConstruction/assets/img/rink\ football.jpeg");
+.nav-tabs .nav-item.show .nav-link, 
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link:focus, 
+.nav-tabs .nav-link:hover {
+  background: var(--white-color);
+  box-shadow: 0 1rem 3rem rgba(0,0,0,1.175);
+  color: var(--primary-color);
 }
 
-.schedule-table .carrom-background-image {
-  background-image: url("/UpConstruction/assets/img/carrom.jpeg");
-}
-.schedule-table .throwball-background-image {
-  background-image: url("/UpConstruction/assets/img/throwball.jpeg");
-}
-.schedule-table .tt-background-image {
-  background-image: url("/UpConstruction/assets/img/tt.jpeg");
-}
-.schedule-table .chess-background-image {
-  background-image: url("/UpConstruction/assets/img/chess.jpeg");
-}
-.schedule-table .basketball-background-image {
-  background-image: url("/UpConstruction/assets/img/basketball.jpeg");
-}
-.schedule-table .badminton-background-image {
-  background-image: url("/UpConstruction/assets/img/badminton.jpeg");
+.nav-tabs h5 {
+  color: var(--p-color); 
+  margin-bottom: 0;
 }
 
-.table-background-image-wrap {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  box-shadow: none;
-  position: relative;
-}
-
-.schedule-table h3,
-.schedule-table p {
-  color: #ff1616;
-  position: relative;
-  z-index: 2;
+.nav-tabs .nav-link.active h5,
+.nav-tabs .nav-link:focus h5, 
+.nav-tabs .nav-link:hover h5 {
+  color: var(--primary-color);
 }
 
 
@@ -3383,4 +3404,8 @@ strong {
   h5 {
     font-size: 20px;
   }
+}
+
+.shadow-lg{
+  box-shadow: 0 1rem 3rem rgba(0,0,0,1.175);
 }
