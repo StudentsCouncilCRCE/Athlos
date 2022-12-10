@@ -2627,6 +2627,7 @@ html {
   .contentt img{
     width: 200px;
   }
+  
 }
 p{
   color: white;
@@ -3170,9 +3171,27 @@ strong {
   height: 100%;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
   .custom-video {
     background: url("/assets/img/Athlos_website_landing_page_mobile.mp4");
+  }
+  .container .row .col img {
+    height: 300px;
+    width: 300px;
+    padding-bottom: 50px;
+    border-radius: 5%;
+  }
+  .footer-info{
+    text-align: center;
+  }
+  .social-links{
+    padding-left: 60px;
+  }
+  .hero-section .container{
+      padding-top: 70px;
+  }
+  .section-header h2{
+    font-size: 40px;
   }
 }
 
