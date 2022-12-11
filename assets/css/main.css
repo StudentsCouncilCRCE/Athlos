@@ -2350,7 +2350,7 @@ html {
 }
 
 .faq .accordion-button {
-  padding: 15px 15px 20px 0;
+  padding: 15px 15px 20px 20px;
   font-weight: 600;
   border-radius: 0px;
   font-size: 18px;
@@ -2369,8 +2369,9 @@ html {
 }
 
 .faq .accordion-body {
-  padding: 0 0 25px 0;
+  padding: 0 0 25px 20px;
   border-radius: 0%;
+  text-align: left;
 }
 
 /*--------------------------------------------------------------
@@ -3470,4 +3471,8 @@ strong {
     display: block;
     margin-bottom: 20px;
   }
+}
+
+.containerr .contentt p{
+  color: white  ;
 }
