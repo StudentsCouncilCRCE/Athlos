@@ -2639,7 +2639,6 @@ p {
 
 .container img {
   filter: grayscale();
-
   transition: transform filter;
   transition-duration: 0.5s;
   transform-style: ease;
@@ -3172,6 +3171,10 @@ strong {
     width: 250px;
     padding-bottom: 50px;
     border-radius: 5%;
+  }
+
+  .custom-video {
+    object-fit: fill;
   }
 }
 /*---------------------------------------
