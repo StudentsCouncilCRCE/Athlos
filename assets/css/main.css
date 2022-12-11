@@ -217,10 +217,11 @@ section {
   inset: 0;
   z-index: 999999;
   overflow: hidden;
-  background: #000;
+  background: url("/assets/img/17434-soccer-player.gif") center #fff;
+  background-repeat: no-repeat;
   transition: all 0.6s ease-out;
 }
-
+/* 
 #preloader:before {
   content: "";
   position: fixed;
@@ -254,7 +255,7 @@ section {
   100% {
     transform: rotate(360deg);
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
