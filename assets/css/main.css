@@ -3175,6 +3175,9 @@ strong {
 
   .custom-video {
     object-fit: fill;
+    height: 100vh;
+    width: 180%;
+    left: -164px;
   }
 }
 /*---------------------------------------
