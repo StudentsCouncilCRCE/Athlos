@@ -3152,7 +3152,11 @@ strong {
   height: 100%;
 }
 
+  
+
+
 @media screen and (max-width: 320px) {
+  
   .footer-info {
     text-align: center;
   }
@@ -3173,6 +3177,7 @@ strong {
     padding-bottom: 50px;
     border-radius: 5%;
   }
+  
 }
 /*---------------------------------------
   SITE HEADER              
