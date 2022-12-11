@@ -2639,7 +2639,6 @@ p {
 
 .container .row .col  {
   filter: grayscale();
-
   transition: transform filter;
   transition-duration: 0.5s;
   transform-style: ease;
@@ -3161,11 +3160,7 @@ strong {
   height: 100%;
 }
 
-  
-
-
 @media screen and (max-width: 320px) {
-  
   .footer-info {
     text-align: center;
   }
@@ -3186,7 +3181,13 @@ strong {
     padding-bottom: 50px;
     border-radius: 5%;
   }
-  
+
+  .custom-video {
+    object-fit: fill;
+    height: 100vh;
+    width: 180%;
+    left: -164px;
+  }
 }
 /*---------------------------------------
   SITE HEADER              
