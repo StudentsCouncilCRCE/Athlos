@@ -2654,6 +2654,7 @@ p {
 }
 .container .row .col:hover .btn{
   opacity: 1;
+  
 }
 
 .google-map {
