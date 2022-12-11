@@ -1,4 +1,4 @@
-/**
+  /**
 * Template Name: UpConstruction - v1.2.1
 * Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
 * Author: BootstrapMade.com
@@ -37,7 +37,14 @@ body {
   font-family: var(--font-default);
   color: var(--color-default);
   overflow-x: hidden;
-  background: #000;
+  font-family: 'League Spartan', sans-serif;
+  background: url(/assets/img/background.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  
 }
 
 a {
@@ -56,7 +63,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-primary);
+  font-family: 'League Spartan', sans-serif;
   color: white;
 }
 
@@ -78,7 +85,7 @@ section {
 }
 
 .section-header h2 {
-  font-size: 32px;
+  font-size: 50px;
   font-weight: 700;
   position: relative;
   color: #ffffff;
@@ -105,11 +112,11 @@ section {
   margin: 0 auto 0 auto;
 }
 
-@media (min-width: 1199px) {
+@media screen and  (max-width: 1199px) {
   .section-header p {
     max-width: 60%;
   }
-}
+
 
 #MyVideo {
   position: relative;
@@ -118,6 +125,28 @@ section {
   min-width: 100%;
   min-height: 100%;
 }
+}
+
+
+
+@media screen and (min-witdh:320px)
+{
+html {
+  min-width: 100px;
+  min-height: 100%;
+}
+  #MyVideo {
+    position: relative;
+    bottom: 170px;
+    right: 150px;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+}
+
+
+
 
 /*--------------------------------------------------------------
 # Breadcrumbs
@@ -142,7 +171,7 @@ section {
   font-size: 56px;
   font-weight: 500;
   color: #fff;
-  font-family: var(--font-secondary);
+  font-family: 'League Spartan', sans-serif;
 }
 
 .breadcrumbs ol {
@@ -462,7 +491,7 @@ section {
 
 .services .service-item .icon {
   width: 48px;
-  height: 48px;
+  height: 48px; 
   position: relative;
   margin-bottom: 50px;
 }
@@ -513,13 +542,17 @@ section {
   color: var(--color-primary);
 }
 
+
 .services .service-item:hover .icon:before {
   background: var(--color-primary);
 }
 
+
 .services .service-item:hover h3 {
   border-color: var(--color-primary);
 }
+
+
 
 /*--------------------------------------------------------------
 # Features Section
@@ -920,7 +953,7 @@ section {
 .about h2 {
   font-size: 48px;
   font-weight: 700;
-  font-family: var(--font-secondary);
+  font-family: 'League Spartan', sans-serif;
   margin: 30px 0;
 }
 
@@ -1034,7 +1067,7 @@ section {
 .stats-counter .stats-item p {
   padding: 0;
   margin: 0;
-  font-family: var(--font-primary);
+  font-family: 'League Spartan', sans-serif;
   font-size: 14px;
 }
 
@@ -1667,7 +1700,7 @@ section {
 }
 
 .hero .info .btn-get-started {
-  font-family: var(--font-primary);
+  font-family: 'League Spartan', sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -2319,7 +2352,7 @@ section {
 .faq .accordion-button {
   padding: 15px 15px 20px 0;
   font-weight: 600;
-  border: 0;
+  border-radius: 0px;
   font-size: 18px;
   color: #444444;
   text-align: left;
@@ -2337,7 +2370,7 @@ section {
 
 .faq .accordion-body {
   padding: 0 0 25px 0;
-  border: 0;
+  border-radius: 0%;
 }
 
 /*--------------------------------------------------------------
@@ -2351,6 +2384,7 @@ section {
   font-size: 14px;
   padding: 80px 0 60px 0;
   position: relative;
+  padding-bottom: 0px;
 }
 
 .footer:before {
@@ -2381,7 +2415,7 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: var(--font-primary);
+  font-family: 'League Spartan', sans-serif;
   color: #fff;
 }
 
@@ -2456,6 +2490,12 @@ section {
 }
 /* new whatever added */
 /* The actual timeline (the vertical ruler) */
+#timeline{
+  margin-top: 100px;
+}
+#events{
+  margin-top: 100px;
+}
 .timeline {
   position: relative;
   max-width: 1200px;
@@ -2486,9 +2526,9 @@ section {
 .containerr::after {
   content: "";
   position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
+  width: 35px;
+  height: 35px;
+  right: -18px;
   background-color: rgb(255, 255, 255);
   border: 4px solid #ff9f55;
   top: 15px;
@@ -2541,8 +2581,8 @@ section {
 
 /* The actual content */
 .contentt {
-  padding: 20px 30px;
-  background-color: rgb(0, 0, 0);
+  padding: 20px 14px;
+  background-color: rgba(0, 0, 0, 0);
   position: relative;
   border-radius: 6px;
   text-align: center;
@@ -2550,6 +2590,7 @@ section {
 
 .contentt img {
   width: 460px;
+  border-radius: 20%;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -2584,8 +2625,12 @@ section {
   .right {
     left: 0%;
   }
+  .contentt img{
+    width: 200px;
+  }
+  
 }
-p {
+p{
   color: white;
 }
 .timeline {
@@ -2614,97 +2659,190 @@ p {
   transform: scale(1.2);
 }
 
-/* schedule timetable */
-.schedule-section {
-  background-image: url("");
-  background-color: #000000;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.table-responsive {
-  filter: drop-shadow(2px 2px 4px #606060);
-}
 
-.schedule-table {
+
+
+ .google-map {
   border-radius: var(--border-radius-medium);
+}
+
+
+/*---------------------------------------
+  CUSTOM FORM               
+-----------------------------------------*/
+.custom-form .form-control {
+  color: var(--p-color);
+  margin-bottom: 24px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  outline: none;
+}
+
+.custom-form button[type="submit"] {
+  background: var(--custom-btn-bg-color);
+  border: none;
+  border-radius: var(--border-radius-large);
+  color: var(--white-color);
+  font-size: var(--p-font-size);
+  font-weight: var(--font-weight-medium);
+  transition: all 0.3s;
+  margin-bottom: 0;
+}
+
+.custom-form button[type="submit"]:hover,
+.custom-form button[type="submit"]:focus {
+  background: var(--custom-btn-bg-hover-color);
+  border-color: transparent;
+}
+.section-padding {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.section-bg {
+  background-color: var(--section-bg-color);
+}
+
+.section-overlay {
+  background-color: var(--dark-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  opacity: 0.35;
+}
+
+.section-overlay + .container {
   position: relative;
-  overflow: hidden;
 }
 
-.schedule-table .bg-warning {
-  background: #f0a5a5 !important;
+.tab-content {
+  background-color: #0000004d;
+  border-radius: var(--border-radius-medium);
+  padding: 45px;
 }
 
-.schedule-table thead th {
-  background-color: var(--secondary-color);
-}
-
-.schedule-table th,
-.schedule-table tr,
-.schedule-table td {
-  border-bottom-color: #363a3e;
-  padding: 30px;
-}
-
-.schedule-table tr:last-child th,
-.schedule-table tr:last-child td {
-  border-bottom-color: transparent;
-}
-
-.schedule-table thead th {
-  border-right: 1px solid #c7460a;
-  border-bottom-color: transparent;
-}
-
-.schedule-table th + td {
+.nav-tabs {
+  background-color: var(--section-bg-color);
+  border-radius: var(--border-radius-large);
   border-bottom: 0;
+  padding: 15px;
 }
 
-.schedule-table thead th:last-child {
-  border-right-color: transparent;
+.nav-tabs .nav-link {
+  border-radius: var(--border-radius-large);
+  border: 0;
+  padding: 15px 25px;
+  transition: all 0.3s;
 }
 
-.schedule-table .football-background-image {
-  background-image: url("/UpConstruction/assets/img/Football.jpeg");
+.nav-tabs .nav-link:first-child {
+  margin-right: 15px;
 }
 
-.schedule-table .rink-background-image {
-  background-image: url("/UpConstruction/assets/img/rink\ football.jpeg");
+.nav-tabs .nav-item.show .nav-link, 
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link:focus, 
+.nav-tabs .nav-link:hover {
+  background: var(--white-color);
+  box-shadow: 0 1rem 3rem rgba(0,0,0,1.175);
+  color: var(--primary-color);
 }
 
-.schedule-table .carrom-background-image {
-  background-image: url("/UpConstruction/assets/img/carrom.jpeg");
-}
-.schedule-table .throwball-background-image {
-  background-image: url("/UpConstruction/assets/img/throwball.jpeg");
-}
-.schedule-table .tt-background-image {
-  background-image: url("/UpConstruction/assets/img/tt.jpeg");
-}
-.schedule-table .chess-background-image {
-  background-image: url("/UpConstruction/assets/img/chess.jpeg");
-}
-.schedule-table .basketball-background-image {
-  background-image: url("/UpConstruction/assets/img/basketball.jpeg");
-}
-.schedule-table .badminton-background-image {
-  background-image: url("/UpConstruction/assets/img/badminton.jpeg");
+.nav-tabs h5 {
+  color: var(--p-color); 
+  margin-bottom: 0;
 }
 
-.table-background-image-wrap {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  box-shadow: none;
+.nav-tabs .nav-link.active h5,
+.nav-tabs .nav-link:focus h5, 
+.nav-tabs .nav-link:hover h5 {
+  color: var(--primary-color);
+}
+
+
+.col .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+.col .btn:hover {
+  background-color: rgb(178, 1, 1);
+}
+
+/* Container needed to position the button. Adjust the width as needed */
+.col {
   position: relative;
+  width: 50%;
 }
 
-.schedule-table h3,
-.schedule-table p {
-  color: #ff1616;
+
+
+.col img {
+  width: 100%;
+  height: auto;
+}
+
+/*---------------------------------------
+  CUSTOM PROPERTIES ( VARIABLES )             
+-----------------------------------------*/
+:root {
+  --white-color: #ffffff;
+  --primary-color: #f8cb2e;
+  --secondary-color: #ee5007;
+  --section-bg-color: #f0f8ff;
+  --custom-btn-bg-color: #ee5007;
+  --custom-btn-bg-hover-color: #c01f27;
+  --dark-color: #000000;
+  --p-color: #717275;
+  --border-color: #7fffd4;
+  --link-hover-color: #b22727;
+}
+
+.col .btn{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+.col .btn:hover {
+  background-color: rgb(178, 1, 1);
+}
+
+/* Container needed to position the button. Adjust the width as needed */
+.col {
   position: relative;
-  z-index: 2;
+  width: 50%;
+}
+
+
+
+.col img {
+  width: 100%;
+  height: auto;
 }
 
 /*---------------------------------------
@@ -2752,7 +2890,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--dark-color);
+  color: var(--white-color);
 }
 
 h1,
@@ -2930,7 +3068,7 @@ strong {
 }
 
 .tab-content {
-  background-color: var(--white-color);
+  background-color: #0000004d;
   border-radius: var(--border-radius-medium);
   padding: 45px;
 }
@@ -3034,12 +3172,32 @@ strong {
   height: 100%;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
   .custom-video {
     background: url("/assets/img/Athlos_website_landing_page_mobile.mp4");
   }
+ 
+  .footer-info{
+    text-align: center;
+  }
+  .social-links{
+    padding-left: 60px;
+  }
+  .hero-section .container{
+      padding-top: 70px;
+  }
+  .section-header h2{
+    font-size: 40px;
+  }
 }
-
+@media screen and (max-width: 460px){
+  .container .row .col img {
+    height: 300px;
+    width: 250px;
+    padding-bottom: 50px;
+    border-radius: 5%;
+  }
+}
 /*---------------------------------------
   SITE HEADER              
 -----------------------------------------*/
@@ -3296,5 +3454,20 @@ strong {
 
   h5 {
     font-size: 20px;
+  }
+}
+
+.shadow-lg{
+  box-shadow: 0 1rem 3rem rgba(0,0,0,1.175);
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+  .col {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
   }
 }
