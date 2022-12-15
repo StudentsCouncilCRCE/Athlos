@@ -3464,3 +3464,9 @@ strong {
 .containerr .contentt p {
   color: white;
 }
+
+.containerr .contentt h2{
+  background: -webkit-linear-gradient(#ff1616, #ffde19);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
