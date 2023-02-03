@@ -2482,6 +2482,7 @@ section {
 }
 /* new whatever added */
 /* The actual timeline (the vertical ruler) */
+
 #timeline {
   margin-top: 100px;
 }
@@ -2516,7 +2517,7 @@ section {
 
 /* The circles on the timeline */
 .containerr::after {
-  content: "";
+  content: " ";
   position: absolute;
   width: 35px;
   height: 35px;
